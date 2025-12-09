@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio" />
+    <meta
+      name="description"
+      content="Kevin Hubert - Frontend Engineer with 15+ years experience. Staff Software Engineer at Findhelp.org specializing in React, TypeScript, and modern web applications."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,6 +24,9 @@
     <header class="header center">
       <nav class="nav center">
         <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#experience">Experience</a>
+          </li>
           <li class="nav__list-item">
             <a class="link link--nav" href="#projects">Projects</a>
           </li>
@@ -49,23 +55,23 @@
     <main>
       <!-- About -->
       <div class="about center">
-        <h1>Hi, I'm <span class="about__name">KevinHubert</span></h1>
-        <h2 class="about__role">A Front end Developer.</h2>
+        <h1>Hi, I'm <span class="about__name">Kevin Hubert</span></h1>
+        <h2 class="about__role">Frontend Engineer</h2>
         <p class="about__desc">
-          Consectetur neque sed quam molestiae consectetur nesciunt sit alias
-          Vitae libero perferendis reprehenderit optio veritatis Accusantium at
-          voluptatum cumque temporibus et Explicabo iste porro quis numquam
-          distinctio Repellendus adipisci nam perferendis amet eaque hic
-          Voluptates
+          Frontend Engineer with over 15 years of experience building intuitive,
+          performant web applications across consumer and enterprise platforms.
+          Currently serving as Staff Software Engineer at Findhelp.org, leading
+          frontend development of React + Remix applications that power program
+          and referral management for social and government organizations.
         </p>
 
         <div class="about__contact center">
-          <a href="https://example.com">
+          <a href="./KevinHubertResume.pdf" target="_blank">
             <span class="btn btn--outline">Resume</span>
           </a>
 
           <a
-            href="https://github.com/rjshkhr"
+            href="https://github.com/kevinhubert"
             aria-label="github"
             class="link link--icon"
           >
@@ -73,7 +79,7 @@
           </a>
 
           <a
-            href="https://linkedin.com/in/rjshkhr"
+            href="https://www.linkedin.com/in/kevin-hubert/"
             aria-label="linkedin"
             class="link link--icon"
           >
@@ -82,33 +88,93 @@
         </div>
       </div>
 
+      <!-- Experience -->
+      <section id="experience" class="section experience">
+        <h2 class="section__title">Experience</h2>
+
+        <div class="experience__container">
+          <div class="experience__item">
+            <div class="experience__header">
+              <h3>Staff Software Engineer</h3>
+              <h4>Findhelp.org, Austin</h4>
+              <span class="experience__date">April 2024 - Current</span>
+            </div>
+            <p class="experience__description">
+              Leading frontend development of React + Remix applications
+              powering program and referral management across social and
+              government organizations. Designed reusable MUI-based component
+              library with flexible fields configurable by role, entity type,
+              and API-driven metadata.
+            </p>
+          </div>
+
+          <div class="experience__item">
+            <div class="experience__header">
+              <h3>Senior Front End Developer</h3>
+              <h4>BuildASign, Austin</h4>
+              <span class="experience__date">December 2019 - January 2024</span>
+            </div>
+            <p class="experience__description">
+              Led Core Web Vitals improvements achieving 25% decreased load
+              time. Refactored legacy applications to Next.js, cutting
+              development time by 30%. Authored over 100 reusable React
+              components and established Front End Guild for cross-team
+              collaboration.
+            </p>
+          </div>
+
+          <div class="experience__item">
+            <div class="experience__header">
+              <h3>Front End Developer</h3>
+              <h4>BuildASign, Austin</h4>
+              <span class="experience__date">April 2015 - December 2019</span>
+            </div>
+            <p class="experience__description">
+              Created UI pattern library for company's largest division.
+              Converted legacy applications to mobile-first responsive layouts
+              and developed automated build/deployment processes with Webpack,
+              Gulp, and Bitbucket Pipelines.
+            </p>
+          </div>
+
+          <div class="experience__item">
+            <div class="experience__header">
+              <h3>Web Applications Developer</h3>
+              <h4>Q2, Austin</h4>
+              <span class="experience__date">June 2013 - April 2015</span>
+            </div>
+            <p class="experience__description">
+              Converted mock-ups into responsive websites and implemented
+              Gitflow for asset management. Created Grunt/Sass workflows and
+              developed company's first Drupal website for The University of
+              Virginia Credit Union.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <!-- Projects -->
       <section id="projects" class="section projects">
         <h2 class="section__title">Projects</h2>
 
         <div class="projects__grid">
           <div class="project">
-            <h3>Project 1</h3>
+            <h3>Findhelp.org Platform</h3>
             <p class="project__description">
-              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-              sapiente debitis labore sed ipsam Mollitia repellat illum quod
-              unde beatae Quis
+              Led frontend development of React + Remix applications powering
+              program and referral management across social and government
+              organizations. Designed reusable MUI-based component library with
+              flexible, configurable fields.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">SASS</li>
-              <li class="project__stack-item">TypeScript</li>
               <li class="project__stack-item">React</li>
+              <li class="project__stack-item">Remix</li>
+              <li class="project__stack-item">Material-UI</li>
+              <li class="project__stack-item">TypeScript</li>
             </ul>
 
             <a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
+              href="https://findhelp.org"
               aria-label="live preview"
               class="link link--icon"
             >
@@ -117,27 +183,22 @@
           </div>
 
           <div class="project">
-            <h3>Project 2</h3>
+            <h3>BuildASign Performance Optimization</h3>
             <p class="project__description">
-              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-              sapiente debitis labore sed ipsam Mollitia repellat illum quod
-              unde beatae Quis
+              Led Core Web Vitals improvements achieving Google's
+              recommendations, resulting in 25% decreased load time. Refactored
+              legacy applications to Next.js, cutting development time by 30%
+              while maintaining performance.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">SASS</li>
-              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">Next.js</li>
               <li class="project__stack-item">React</li>
+              <li class="project__stack-item">Webpack</li>
+              <li class="project__stack-item">.NET</li>
             </ul>
 
             <a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
+              href="https://buildasign.com"
               aria-label="live preview"
               class="link link--icon"
             >
@@ -146,32 +207,19 @@
           </div>
 
           <div class="project">
-            <h3>Project 3</h3>
+            <h3>React Component Library</h3>
             <p class="project__description">
-              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-              sapiente debitis labore sed ipsam Mollitia repellat illum quod
-              unde beatae Quis
+              Authored over 100 reusable React components for customer-facing
+              applications. Created UI pattern library and led Front End Guild
+              to encourage collaboration between development teams across the
+              organization.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">SASS</li>
-              <li class="project__stack-item">TypeScript</li>
               <li class="project__stack-item">React</li>
+              <li class="project__stack-item">Redux</li>
+              <li class="project__stack-item">Sass</li>
+              <li class="project__stack-item">Webpack</li>
             </ul>
-
-            <a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
           </div>
         </div>
       </section>
@@ -180,27 +228,52 @@
       <section class="section skills" id="skills">
         <h2 class="section__title">Skills</h2>
         <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">HTML</li>
-          <li class="skills__list-item btn btn--plain">CSS</li>
-          <li class="skills__list-item btn btn--plain">SCSS</li>
-          <li class="skills__list-item btn btn--plain">JavaScript</li>
-          <li class="skills__list-item btn btn--plain">TypeScript</li>
           <li class="skills__list-item btn btn--plain">React</li>
+          <li class="skills__list-item btn btn--plain">TypeScript</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">Remix</li>
+          <li class="skills__list-item btn btn--plain">Next.js</li>
+          <li class="skills__list-item btn btn--plain">Node.js</li>
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">Material-UI</li>
           <li class="skills__list-item btn btn--plain">Redux</li>
+          <li class="skills__list-item btn btn--plain">HTML5</li>
+          <li class="skills__list-item btn btn--plain">CSS3</li>
+          <li class="skills__list-item btn btn--plain">Sass</li>
+          <li class="skills__list-item btn btn--plain">Webpack</li>
+          <li class="skills__list-item btn btn--plain">Vite</li>
           <li class="skills__list-item btn btn--plain">Git</li>
-          <li class="skills__list-item btn btn--plain">Material UI</li>
-          <li class="skills__list-item btn btn--plain">Jest</li>
-          <li class="skills__list-item btn btn--plain">Enzyme</li>
-          <li class="skills__list-item btn btn--plain">CI/CD</li>
+          <li class="skills__list-item btn btn--plain">FastAPI</li>
+          <li class="skills__list-item btn btn--plain">Flask</li>
+          <li class="skills__list-item btn btn--plain">Tailwind</li>
+          <li class="skills__list-item btn btn--plain">Figma</li>
+          <li class="skills__list-item btn btn--plain">Accessibility</li>
         </ul>
       </section>
 
       <!-- Contact -->
       <section class="section contact center" id="contact">
         <h2 class="section__title">Contact</h2>
-        <a href="mailto:rjshekhar.official@gmail.com">
-          <span class="btn btn--outline">Email me</span>
-        </a>
+        <div class="contact__content">
+          <p class="contact__text">
+            Based in Georgetown, TX and open to remote opportunities worldwide.
+            Let's connect and discuss how we can build something amazing
+            together.
+          </p>
+          <div class="contact__methods">
+            <a href="mailto:iamkevinhubert@gmail.com" class="contact__item">
+              <i class="fas fa-envelope"></i>
+              <span>iamkevinhubert@gmail.com</span>
+            </a>
+            <a href="tel:+15129145156" class="contact__item">
+              <i class="fas fa-phone"></i>
+              <span>(512) 914-5156</span>
+            </a>
+          </div>
+          <a href="mailto:iamkevinhubert@gmail.com">
+            <span class="btn btn--outline">Get In Touch</span>
+          </a>
+        </div>
       </section>
     </main>
     <div class="scroll-container">
